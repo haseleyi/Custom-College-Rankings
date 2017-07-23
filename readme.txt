@@ -1,0 +1,7 @@
+Kevin Christianson and Isaac Haseley, 2017
+
+Dependencies: Python, JavaFX, GSON, psycopg2, flask
+
+Today’s college ranking systems garner nothing but complaints for their misguided use of metrics by which to evaluate institutions. Why ask administrators to judge universities they’ve never stepped foot on? Why weight standardized test scores at 7.5% of an institution’s outcome? And where’s the quality of food metric? We can’t promise to fix that last one (yet), but our app will resolve common complaints by placing ranking metrics in the hands of its users. We started humble and built an API that addresses a few factors: location, public/private, cost, test scores, acceptance rate, the basics. 
+ 
+MVC is the design pattern for us. Modeling Colleges and a data structure to manage them (AllColleges) allows us to reuse these classes upon future expansion of the user interface. Separating the design thusly will allow us to work on different pieces of the project and reduce merge conflicts. When we begin reading resumes and our team expands, this conventional design pattern will be familiar to new recruits. For now, views include nested AnchorPanes (or Regions or a close relative), buttons, text input fields, and text labels. 
